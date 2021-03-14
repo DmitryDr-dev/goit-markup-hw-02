@@ -1,21 +1,114 @@
-/* Переменные */
+/* Variables */
 :root {
-  --main-text-font-family: "Roboto", sans-serif;
+  --main-text-font: "Roboto", sans-serif;
   --main-text-color: #757575;
+  --title-text-color: #212121;
   --dark-bg-text-color: #ffffff;
+  --light-bg-text-color: #000000;
   --accent-color: #2196f3;
-  --dark-bg-color: #2f303a;
   --main-bg-color: #e5e5e5;
+  --secondary-bg-color: #f5f4fa;
+  --dark-bg-color: #2f303a;
 }
-/* font-family: "Raleway", sans-serif; */
-/* font-family: "Roboto", sans-serif; */
-/* Общие CSS правила */
+/* General CSS Rules */
 body {
-  font-family: var(--main-text-font-family);
+  background-color: var(--main-bg-color);
+  font-family: var(--main-text-font);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
 }
-/* Частные CSS правила */
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.btn {
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--dark-bg-text-color);
+  cursor: pointer;
+}
+/* Specific CSS Rules */
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.logo--dark {
+  color: var(--light-bg-text-color);
+}
+.logo--light {
+  color: var(--dark-bg-text-color);
+}
+
+.nav-link,
+.contacts-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.nav-link {
+  color: var(--title-text-color);
+}
+.contacts-link {
+  color: var(--main-text-color);
+}
+.contacts-link:hover,
+.contacts-link:focus,
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+
+.current-page {
+  color: var(--accent-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--dark-bg-text-color);
+}
+.benefits-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-text-color);
+}
