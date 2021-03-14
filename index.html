@@ -25,7 +25,7 @@
       <!-- site navigation -->
       <ul class="list">
         <li>
-          <a class="link nav-link current-page" href="./index.html">Студия</a>
+          <a class="link nav-link nav-link--active" href="./index.html">Студия</a>
         </li>
         <li>
           <a class="link nav-link" href="./portfolio.html">Портфолио</a>
@@ -53,7 +53,7 @@
   <main>
     <!-- Hero Section -->
     <section class="hero">
-      <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+      <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
       <button class="btn" type="button">Заказать услугу</button>
     </section>
     <!-- /Hero Section -->
@@ -63,19 +63,19 @@
       <h2 class="visually-hidden">Преимущества работы с нами</h2>
       <ul class="list">
         <li>
-          <h3 class="benefits-title">Внимание к деталям</h3>
+          <h3 class="benefits__title">Внимание к деталям</h3>
           <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
         </li>
         <li>
-          <h3 class="benefits-title">Пунктуальность</h3>
+          <h3 class="benefits__title">Пунктуальность</h3>
           <p>Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
         </li>
         <li>
-          <h3 class="benefits-title">Планирование</h3>
+          <h3 class="benefits__title">Планирование</h3>
           <p>Равным образом консультация с широким активом в значительной степени обуславливает.</p>
         </li>
         <li>
-          <h3 class="benefits-title">Современные технологии</h3>
+          <h3 class="benefits__title">Современные технологии</h3>
           <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
         </li>
       </ul>
@@ -103,30 +103,30 @@
       <ul class="list">
         <li>
           <img src="./images/team/team-1.jpg" alt="Игорь Демьяненко">
-          <h3>Игорь Демьяненко</h3>
-          <p lang="en">Product Designer</p>
+          <h3 class="team__member">Игорь Демьяненко</h3>
+          <p class="team__member-position" lang="en">Product Designer</p>
         </li>
         <li>
           <img src="./images/team/team-2.jpg" alt="Ольга Репина">
-          <h3>Ольга Репина</h3>
-          <p lang="en">Frontend Developer</p>
+          <h3 class="team__member"> Ольга Репина</h3>
+          <p class="team__member-position" lang="en">Frontend Developer</p>
         </li>
         <li>
           <img src="./images/team/team-3.jpg" alt="Николай Тарасов">
-          <h3>Николай Тарасов</h3>
-          <p lang="en">Marketing</p>
+          <h3 class="team__member">Николай Тарасов</h3>
+          <p class="team__member-position" lang="en">Marketing</p>
         </li>
         <li>
           <img src="./images/team/team-4.jpg" alt="Михаил Ермаков">
-          <h3>Михаил Ермаков</h3>
-          <p lang="en">UI Designer</p>
+          <h3 class="team__member">Михаил Ермаков</h3>
+          <p class="team__member-position" lang="en">UI Designer</p>
         </li>
       </ul>
     </section>
     <!-- /Team Section -->
   </main>
   <!-- footer-->
-  <footer>
+  <footer class="page-footer">
     <!-- company logo. In Header & Footer is the same-->
     <a class="logo link" href="./index.html">
       Web<span class="logo--light">Studio</span>
@@ -134,17 +134,18 @@
     <address>
       <ul class="list">
         <li>
-          <a href="https://goo.gl/maps/Z7eTmiZsE94p95589" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a>
+          <a class="link address-item"" href=" https://goo.gl/maps/Z7eTmiZsE94p95589" target="_blank" rel="noreferrer noopener">г. Киев, пр-т Леси Украинки, 26</a>
         </li>
         <li>
-          <a href="mailto:info@example.com">info@example.com</a>
+          <a class="link address-item" href="mailto:info@example.com">info@example.com</a>
         </li>
         <li>
-          <a href="tel:+380991111111">+38 099 111 11 11</a>
+          <a class="link address-item" href="tel:+380991111111">+38 099 111 11 11</a>
         </li>
       </ul>
     </address>
   </footer>
+  <!-- /footer -->
 </body>
 
 </html>

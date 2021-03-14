@@ -4,9 +4,10 @@
   --main-text-color: #757575;
   --title-text-color: #212121;
   --dark-bg-text-color: #ffffff;
+  --address-text-color: rgba(255, 255, 255, 0.6);
   --light-bg-text-color: #000000;
   --accent-color: #2196f3;
-  --main-bg-color: #e5e5e5;
+  --main-bg-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
   --dark-bg-color: #2f303a;
 }
@@ -25,6 +26,7 @@ body {
 }
 .link {
   text-decoration: none;
+  color: var(--main-text-color);
 }
 .visually-hidden {
   position: absolute !important;
@@ -81,9 +83,7 @@ body {
 .nav-link {
   color: var(--title-text-color);
 }
-.contacts-link {
-  color: var(--main-text-color);
-}
+
 .contacts-link:hover,
 .contacts-link:focus,
 .nav-link:hover,
@@ -91,11 +91,11 @@ body {
   color: var(--accent-color);
 }
 
-.current-page {
+.nav-link--active {
   color: var(--accent-color);
 }
 
-.hero-title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -104,11 +104,69 @@ body {
   text-transform: uppercase;
   color: var(--dark-bg-text-color);
 }
-.benefits-title {
+.benefits__title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
+}
+.team {
+  background-color: var(--secondary-bg-color);
+}
+.team__member {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+.team__member-position {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.page-footer {
+  background-color: var(--dark-bg-color);
+}
+.address-item {
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--address-text-color);
+}
+.address-item:hover,
+.address-item:focus {
+  color: var(--dark-bg-text-color);
+}
+.filter-btn {
+  background-color: var(--secondary-bg-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  cursor: pointer;
+}
+.filter-btn--active {
+  background-color: var(--accent-color);
+  color: var(--dark-bg-text-color);
+}
+
+.portfolio-item__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.portfolio-item__category {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
 }
