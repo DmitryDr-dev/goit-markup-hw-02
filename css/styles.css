@@ -1,5 +1,21 @@
-/* Variables */
-
-font-family: "Raleway", sans-serif;
-font-family: "Roboto", sans-serif;
-/* Default CSS Rules */
+/* Переменные */
+:root {
+  --main-text-font-family: "Roboto", sans-serif;
+  --main-text-color: #757575;
+  --dark-bg-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --dark-bg-color: #2f303a;
+  --main-bg-color: #e5e5e5;
+}
+/* font-family: "Raleway", sans-serif; */
+/* font-family: "Roboto", sans-serif; */
+/* Общие CSS правила */
+body {
+  font-family: var(--main-text-font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+/* Частные CSS правила */
