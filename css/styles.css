@@ -1,6 +1,5 @@
 /* Variables */
 :root {
-  --main-text-font: "Roboto", sans-serif;
   --main-text-color: #757575;
   --title-text-color: #212121;
   --dark-bg-text-color: #ffffff;
@@ -14,8 +13,7 @@
 /* General CSS Rules */
 body {
   background-color: var(--main-bg-color);
-  font-family: var(--main-text-font);
-  font-weight: 400;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -43,7 +41,6 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 
@@ -63,7 +60,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
   color: var(--accent-color);
 }
 .logo--dark {
@@ -76,7 +72,6 @@ body {
 .nav-link,
 .contacts-link {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
@@ -94,7 +89,9 @@ body {
 .nav-link--active {
   color: var(--accent-color);
 }
-
+.hero {
+  background-color: var(--dark-bg-color);
+}
 .hero__title {
   font-weight: 900;
   font-size: 44px;
@@ -108,7 +105,6 @@ body {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
 }
@@ -120,23 +116,18 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
 }
 .team__member-position {
-  font-family: Roboto;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 .page-footer {
   background-color: var(--dark-bg-color);
 }
 .address-item {
   font-style: normal;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--address-text-color);
 }
 .address-item:hover,
@@ -149,11 +140,11 @@ body {
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-text-color);
   cursor: pointer;
 }
-.filter-btn--active {
+.filter-btn:hover,
+.filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--dark-bg-text-color);
 }
@@ -168,5 +159,4 @@ body {
 .portfolio-item__category {
   font-size: 16px;
   line-height: 1.87;
-  letter-spacing: 0.03em;
 }
