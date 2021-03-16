@@ -126,13 +126,25 @@ body {
 .page-footer {
   background-color: var(--dark-bg-color);
 }
-.address-item {
+.location,
+.email,
+.tel {
   font-style: normal;
+}
+.location {
+  color: var(--dark-bg-text-color);
+}
+.email,
+.tel {
   color: var(--address-text-color);
 }
-.address-item:hover,
-.address-item:focus {
-  color: var(--dark-bg-text-color);
+.location:hover,
+.location:focus,
+.email:hover,
+.tel:hover,
+.email:focus,
+.tel:focus {
+  color: var(--accent-color);
 }
 .filter-btn {
   background-color: var(--secondary-bg-color);
